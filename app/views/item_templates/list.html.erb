@@ -1,0 +1,27 @@
+
+<div class="pic">
+  <img src="anna.jpg" alt="anna's face" height="200px"/>
+</div>
+
+<div>
+  <p class="name nova-flat-regular">Anna Villarreal</p>
+</div>
+
+<div>
+  <div class="socials">
+    <a href="https://www.facebook.com/icahas/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://github.com/AnnaVi11arrea1" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/anna-villarreal-38254b258/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://dev.to/annavi11arrea1" target="_blank"><i class="fa-brands fa-dev"></i></a>
+  </div>
+</div>
+<div class="everfluorescent">
+  <% @list_of_items.each do |the_item| %>
+    <div class="link">
+        <img class="image" src="<%= the_item.thumbnail_url %>">
+        <a class="biz" href="<%= the_item.link_url %>" target="_blank">
+        <p class="nova-flat-regular"><%= the_item.link_description %></p>
+      </a>
+    </div>
+  <% end %>
+</div>
